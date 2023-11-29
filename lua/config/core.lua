@@ -1,0 +1,2 @@
+--Core
+vim.g.mapleader = ' '
