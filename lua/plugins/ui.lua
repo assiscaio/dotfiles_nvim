@@ -75,7 +75,10 @@ return {
 			})
 		end,
 	},
-	{"lukas-reineke/indent-blankline.nvim"},
+	{
+		"lukas-reineke/indent-blankline.nvim"
+	},
+		
 	{
 	"nvim-lualine/lualine.nvim",
 	opts = {

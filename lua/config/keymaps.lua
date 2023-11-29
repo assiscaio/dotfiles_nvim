@@ -6,7 +6,7 @@ vim.keymap.set('n', '<leader>fh', tscope.help_tags, {})
 vim.keymap.set('n', '<leader>fg', tscope.git_files, {})
 
 -- atalhos
-vim.keymap.set('n', '<C-F7>',':e stdpath("config")<CR>', {})
+--vim.keymap.set('n', '<C-F7>',':e stdpath("config")<CR>', {})
 
 -- buffers
 --vim.keymap.set('n', '<leader>bn', ':bn<CR>', {})
