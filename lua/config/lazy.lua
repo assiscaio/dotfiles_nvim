@@ -37,6 +37,17 @@ require("dressing").setup({
   }
 })
 require('lualine').setup()
+require("telescope").setup({
+	extensions = {
+		workspaces = {
+			keep_insert = true,
+		}
+	}
+})
+require('mini.animate').setup()
+require('mini.surround').setup()
+
+--telescope.load_extensions("workspaces")
 -- require("telescope").setup {
 -- 	extensions = {
 -- 		["ui-select"] = {

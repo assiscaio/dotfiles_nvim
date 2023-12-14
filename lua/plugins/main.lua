@@ -33,5 +33,14 @@ return {
 			{ "<leader>ql", function() require("persistence").load({ last = true }) end, desc = "Restore Last Session" },
 			{ "<leader>qd", function() require("persistence").stop() end, desc = "Don't save current Session" },
 		}
+	},
+	{
+		"natecraddock/workspaces.nvim",
+	},
+	{
+		"echasnovski/mini.nvim"
+	},
+	{
+		"echasnovski/mini.animate"
 	}
 }
