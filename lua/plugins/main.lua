@@ -43,4 +43,9 @@ return {
 	{
 		"echasnovski/mini.animate"
 	}
+		"tpope/vim-surround"
+	},
+	{
+		"justinmk/vim-sneak"
+	},
 }
