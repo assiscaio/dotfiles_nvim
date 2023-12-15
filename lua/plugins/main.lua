@@ -42,7 +42,8 @@ return {
 	},
 	{
 		"echasnovski/mini.animate"
-	}
+	},
+	{
 		"tpope/vim-surround"
 	},
 	{
