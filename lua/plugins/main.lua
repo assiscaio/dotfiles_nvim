@@ -5,12 +5,9 @@ return {
 	{
 		"BurntSushi/ripgrep",
 	},
-    	{
-        	"nvim-telescope/telescope.nvim",
-        	dependencies = {
-            	'nvim-lua/plenary.nvim'
-        	}
-    	},
+	{
+		"zane-/cder.nvim"
+	},
 	{
 		"simrat39/symbols-outline.nvim",
 		cmd = "SymbolsOutline",
@@ -41,7 +38,7 @@ return {
 		"echasnovski/mini.nvim"
 	},
 	{
-		"echasnovski/mini.animate"
+		"echasnovski/mini.animate",
 	},
 	{
 		"tpope/vim-surround"
@@ -51,6 +48,18 @@ return {
 	},
 	{
 		"onsails/lspkind.nvim"
+	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+		end
+	},
+	{
+		"folke/trouble.nvim",
+		opts = { use_diagnostic_signs = true }
 	},
 	--{
 		--"hrsh7th/nvim-cmp"
