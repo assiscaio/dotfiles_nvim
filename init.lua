@@ -1,6 +1,7 @@
 require("config.core")
 require("config.lazy")
 require("config.keymaps")
+require("config.w-keys")
 
 vim.cmd([[colorscheme catppuccin-frappe]])
 local vimdir = vim.fn.stdpath("config")

@@ -65,21 +65,16 @@ require("telescope").setup({
 --vim.notify = require("notify")
 
 --Which-key Configuration
-local wk = require("which-key")
-wk.register({
-	c = {
-		name = "+config",
-		p = {function() require("telescope.builtin").find_files({cwd = vim.fn.stdpath('config') .. "/lua/plugins"}) end, "Find plugin" },
-		c = {function() require("telescope.builtin").find_files({cwd = vim.fn.stdpath('config') .. "/lua/config"}) end, "Arquivo Init"}
-	},
-	f = {
-		
-		f = {"<cmd>Telescope find_files<cr>", "Find File in current dir" },
-		e = "Edit File",
-		["1"] = "which_key_ignore",
-	},
-	s = {
-		name = "+src",
-		m = {function() require("telescope.builtin").find_files({cwd = vim.env.HOME .. "/src"}) end, "Selecionar módulo" }
-	},
-}, { prefix = "<leader>" })
+-- local wk = require("which-key")
+-- wk.register({
+-- 	f = {
+--
+-- 		f = {"<cmd>Telescope find_files<cr>", "Find File in current dir" },
+-- 		e = "Edit File",
+-- 		["1"] = "which_key_ignore",
+-- 	},
+-- 	s = {
+-- 		name = "+src",
+-- 		m = {function() require("telescope.builtin").find_files({cwd = vim.env.HOME .. "/src"}) end, "Selecionar módulo" }
+-- 	},
+-- }, { prefix = "<leader>" })

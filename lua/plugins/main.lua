@@ -61,6 +61,9 @@ return {
 		"folke/trouble.nvim",
 		opts = { use_diagnostic_signs = true }
 	},
+	{
+		"folke/snacks.nvim",
+	},
 	--{
 		--"hrsh7th/nvim-cmp"
 	--}
