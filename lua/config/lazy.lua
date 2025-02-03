@@ -52,13 +52,46 @@ require("dressing").setup({
 })
 require("lualine").setup()
 require("telescope").load_extension("cder")
+--require("telescope").load_extension "file_browser"
+local fb_actions = require "telescope".extensions.file_browser.actions
+
 require("telescope").setup({
 	extensions = {
+		file_browser = {
+			theme = "ivy",
+			hijack_netrw = true,
+			cwd_to_path = true,
+			files = true,
+			add_dirs = true,
+			browse_files = require("telescope._extensions.file_browser.finders").browse_files,
+			browse_folders = require("telescope._extensions.file_browser.finders").browse_folders,
+			git_status = true,
+			mappings = {
+				["i"] = {
+					["A-c"] = fb_actions.create,
+					["S-CR"] = fb_actions_create_from_prompt,
+					["<A-r>"] = fb_actions.rename,
+					["<A-m>"] = fb_actions.move,
+					["<A-y>"] = fb_actions.copy,
+					["<A-d>"] = fb_actions.remove,
+					["<C-o>"] = fb_actions.open,
+					["<C-g>"] = fb_actions.goto_parent_dir,
+					["<C-e>"] = fb_actions.goto_home_dir,
+					["<C-w>"] = fb_actions.goto_cwd,
+					["<C-t>"] = fb_actions.change_cwd,
+					["<C-f>"] = fb_actions.toggle_browser,
+					["<C-h>"] = fb_actions.toggle_hidden,
+					["<C-s>"] = fb_actions.toggle_all,
+					["<bs>"] = fb_actions.backspace,
+				}
+			}
+		},
 		workspaces = {
 			keep_insert = true,
 		},
 	},
 })
+
 -- require("mini.animate").setup()
 -- require("mini.surround").setup()
 
