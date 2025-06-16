@@ -63,8 +63,5 @@ return {
 	},
 	{
 		"folke/snacks.nvim",
-	},
-	--{
-		--"hrsh7th/nvim-cmp"
-	--}
+	}
 }
