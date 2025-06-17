@@ -14,27 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
-		--{ import = "lazyvim.plugins.extras" },
-		--{ import = "lazyvim.plugins.extras.lang.typescript" },
-		--{ import = "lazyvim.plugins.extras.lang.json" },
-		{ import = "plugins" },
-		{ import = "plugins.langs"}
+		{import = "plugins"},
+		{import = "plugins.ui"},
+		{import = "plugins.langs"},
 	},
-	install = { colorscheme = { habamax, gruvbox } },
-	checker = { enabled = true },
-	performance = {
-		rtp = {
-			disabled_plugins = {
-				"gzip",
-				"tarPlugin",
-				"tohtml",
-				"tutor",
-				"zipPlugin",
-			},
-		},
-	},
+	install = { colorscheme = { "habamax" }},
+	version = false,
+	checker = { enabled = true }
 })
-
--- require("symbols-outline").setup()
--- require("lualine").setup()
