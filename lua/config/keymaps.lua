@@ -9,6 +9,9 @@ vim.keymap.set('n', '<leader>q', ':qall!<CR>', {})
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', {})
 vim.keymap.set('i', 'jj', '<ESC><CR>', { desc = "Quick escape" })
 
+-- Oil
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", {desc = "Open Directory"})
+
 -- map('n', '<leader><Right>', ':bn<CR>', {})
 -- map('n', '<leader><Left>', ':bp<CR>', {})
 -- map('n', '<leader>b', ':ls<CR>', {})
