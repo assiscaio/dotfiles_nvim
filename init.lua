@@ -1,2 +1,2 @@
 require("config.lazy")
-vim.cmd([[colorscheme elflord]])
+vim.cmd([[colorscheme wildcharm]])

@@ -8,3 +8,5 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.nu = true
 vim.o.rnu = true
+vim.g.copilot_node_command = "C:/Apps/node/node-v22.20.0-win-x64/node.exe"
+--vim.o.sneak-clever-s = true

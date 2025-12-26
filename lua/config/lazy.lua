@@ -14,6 +14,20 @@ vim.opt.rtp:prepend(lazypath)
 
 require('config.options')
 require("lazy").setup({
+	{
+		"mistweaverco/kulala.nvim",
+		keys = {
+			{ "<leader>Rs", desc = "Send request" },
+			{ "<leader>Ra", desc = "Send all requests" },
+			{ "<leader>Rb", desc = "Open scratchpad" },
+		},
+		ft = {"http", "rest"},
+		opts = {
+			global_keymaps = false,
+			global_keymaps_prefix = "<leader>R",
+			kulala_keymaps_prefix = ""
+		}
+	},
 	spec = {
 		{import = "plugins"},
 		{import = "plugins.ui"},
@@ -22,6 +36,8 @@ require("lazy").setup({
 	version = false,
 	checker = { enabled = true }
 })
+require('lualine').setup()
+require('telescope').setup()
 
 -- Import de configuracoes locais
 require('config.keymaps')

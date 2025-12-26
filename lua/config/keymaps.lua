@@ -11,13 +11,13 @@ vim.keymap.set('i', 'jj', '<ESC><CR>', { desc = "Quick escape" })
 
 -- Oil
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", {desc = "Open Directory"})
+vim.keymap.set("n", '<leader>-', "<CMD>Oil C:/Users/DA8K/AppData/Local/nvim<CR>", {desc = "Abrir configurações"})
 
--- map('n', '<leader><Right>', ':bn<CR>', {})
--- map('n', '<leader><Left>', ':bp<CR>', {})
--- map('n', '<leader>b', ':ls<CR>', {})
--- map('n', '<leader>q', ':qall!', {})
+-- Git
+vim.keymap.set("n", "<leader>gp", "<CMD>Git preview_hunk<CR>", {desc = "Preview git hunk"})
+vim.keymap.set("n", "<leader>gbl", "<CMD>Git blame_line<CR>", {desc = "Toggle blame line"})
+vim.keymap.set("n", "<leader>gb", "<CMD>Git blame<CR>", {desc = "Toggle blame"})
 
--- map('n', '<leader>l', ':Lazy<CR>', {})
 --Configuracoes lazy.nvim
 -- map('n', '<leader>ck', ':edit')
 
