@@ -1,4 +1,4 @@
-return {		
+return {
 	{
 		"simrat39/symbols-outline.nvim",
 		cmd = "SymbolsOutline",
@@ -13,24 +13,14 @@ return {
 		end,
 	},
 	{
-		"folke/persistence.nvim",
-		event = "BufReadPre",
-		opts = { options = vim.opt.sessionoptions:get() },
-		keys = {
-			{ "<leader><C-s><C-r>", function() require("persistence").load() end, desc = "Restore Session" },
-			{ "<leader><C-s><C-s>", function() require("persistence").load({ last = true }) end, desc = "Restore Last Session" },
-			{ "<leader><C-s><C-d>", function() require("persistence").stop() end, desc = "Don't save current Session" },
-		}
-	},
-	{
 		"natecraddock/workspaces.nvim",
-	},		
+	},
 	{
 		"tpope/vim-surround"
 	},
 	{
 		"justinmk/vim-sneak"
-	},	
+	},
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
@@ -45,5 +35,24 @@ return {
 	},
 	{
 		"folke/snacks.nvim",
+		priority = 1000,
+		lazy = false,
+		---@type snacks.Config
+		opts = {
+		    animate = { enabled = true },
+            dashboard = { enabled = true },
+            bufdelete = { enabled = true },
+            dim = { enabled = true },
+            input = { enabled = true },
+            indent = { enabled = true },
+            layout = { enabled = true },
+            lazygit = { enabled = true },
+            notifier = { enabled = true },
+            scope = { enabled = true },
+            scroll = { enabled = true },
+            toggle = { enabled = true },
+            win = { enabled = true },
+            words = { enabled = true },
+		},
 	}
 }
