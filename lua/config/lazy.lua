@@ -37,8 +37,6 @@ require("lazy").setup({
 	version = false,
 	checker = { enabled = true }
 })
-require('lualine').setup()
-require('telescope').setup()
 
 -- Import de configuracoes locais
 require('config.keymaps')
